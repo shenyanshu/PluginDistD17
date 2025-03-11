@@ -32,6 +32,7 @@ Get-ChildItem -Path stable -File -Recurse -Include *.json | ForEach-Object {
             # 注入测试版程序集版本
             $testingContent = Get-Content $testingPath | ConvertFrom-Json
             $content | Add-Member -Force -Name "TestingAssemblyVersion" -Value $testingContent.AssemblyVersion -MemberType NoteProperty
+            $content | Add-Member -Force -Name "TestingDalamudApiLevel" -Value $apiLevel -MemberType NoteProperty
         }
         $content | Add-Member -Force -Name "IsTestingExclusive" -Value "False" -MemberType NoteProperty
 
@@ -68,6 +69,7 @@ Get-ChildItem -Path testing-live -File -Recurse -Include *.json | ForEach-Object
     if (($output | Where-Object { $_.InternalName -eq $content.InternalName }).Count -eq 0) {
         $content | Add-Member -Force -Name "TestingAssemblyVersion" -Value $content.AssemblyVersion -MemberType NoteProperty
         $content | Add-Member -Force -Name "IsTestingExclusive" -Value "True" -MemberType NoteProperty
+        $content | Add-Member -Force -Name "TestingDalamudApiLevel" -Value $apiLevel -MemberType NoteProperty
 
         # 验证测试版ZIP文件
         $internalName = $content.InternalName
