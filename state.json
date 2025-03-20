@@ -22637,9 +22637,9 @@
           }
         },
         "FaderPlugin": {
-          "BuiltCommit": "befc480bafaf5dc1c8c2d436e7d2f432a9246ab6",
-          "TimeBuilt": "2025-01-22T14:33:21.3045152+00:00",
-          "EffectiveVersion": "2.6.2.7",
+          "BuiltCommit": "51afb2420af7a599e5bacac8e00737c7adb3ebd0",
+          "TimeBuilt": "2025-03-20T10:48:22.7352395+00:00",
+          "EffectiveVersion": "2.7.0.0",
           "MinimumVersion": null,
           "Changelogs": {
             "2.3.0.0": {
@@ -22733,6 +22733,18 @@
               ],
               "Reviewer": "philpax",
               "Submitter": null
+            },
+            "2.7.0.0": {
+              "TimeReleased": "2025-03-20T10:48:22.7353001+00:00",
+              "Changelog": "![423004279-0deb9336-249c-4d51-8f24-50556ff76561](https://github.com/user-attachments/assets/53e67de0-85ac-4cd6-978f-2fd71d1319d4)\r\n\r\n(Thanks PhibrXIV)\r\n- Each UI Element now has its own opacity value\r\n- Added Hover State:\r\n  - Elements using the hover state have their opacity adjusted on a per-addon basis\r\n\r\nNote:\r\n\u003E The previous method of hiding elements far off screen can still be used with the disable Element option on the default state.\r\noption to hide an element only appears when the opacity is set to a value lower than 0.05. The idea being that it would look awkward for an element to start fading away, but then to just suddenly pop out of existence.\r\n\r\n![423000861-2cb5dbec-ccbc-4686-926e-65e7dc26f896](https://github.com/user-attachments/assets/3e3a6e6d-9acf-4fb4-b1b3-e4512a49670a)\r\n",
+              "UsedNeeds": [
+                {
+                  "Key": "DalamudPackager",
+                  "Version": "11.0.0"
+                }
+              ],
+              "Reviewer": "Critical-Impact",
+              "Submitter": "Infiziert90"
             }
           }
         },
@@ -64794,9 +64806,9 @@
           }
         },
         "JobTitles": {
-          "BuiltCommit": "8117037bf80cbab846ef03e63bbddf94dc1bfc91",
-          "TimeBuilt": "2025-03-12T19:22:54.6836939+00:00",
-          "EffectiveVersion": "0.2.0.0",
+          "BuiltCommit": "ae9f282967c13fd5ccf483a2007e1a5ce6728ad7",
+          "TimeBuilt": "2025-03-20T10:13:00.0160052+00:00",
+          "EffectiveVersion": "0.2.0.1",
           "MinimumVersion": null,
           "Changelogs": {
             "0.1.0.0": {
@@ -65073,6 +65085,146 @@
                 }
               ],
               "Reviewer": "reiichi001",
+              "Submitter": "keifufu"
+            },
+            "0.2.0.1": {
+              "TimeReleased": "2025-03-20T10:13:00.0160674+00:00",
+              "Changelog": "- Fixed Conjurer being classified as a job instead of a class\n",
+              "UsedNeeds": [
+                {
+                  "Key": "DalamudPackager",
+                  "Version": "11.0.0"
+                },
+                {
+                  "Key": "DotNet.ReproducibleBuilds",
+                  "Version": "1.2.25"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Hosting",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Configuration",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Configuration.Abstractions",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Configuration.Binder",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Configuration.CommandLine",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Configuration.FileExtensions",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Configuration.Json",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Configuration.UserSecrets",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.DependencyInjection",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.DependencyInjection.Abstractions",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Diagnostics",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Diagnostics.Abstractions",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.FileProviders.Abstractions",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.FileProviders.Physical",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.FileSystemGlobbing",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Hosting.Abstractions",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Logging",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Logging.Abstractions",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Logging.Configuration",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Logging.Console",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Logging.Debug",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Logging.EventLog",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Logging.EventSource",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Options",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Options.ConfigurationExtensions",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "Microsoft.Extensions.Primitives",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "System.Diagnostics.DiagnosticSource",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "System.Diagnostics.EventLog",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "System.Text.Encodings.Web",
+                  "Version": "8.0.0"
+                },
+                {
+                  "Key": "System.Text.Json",
+                  "Version": "8.0.0"
+                }
+              ],
+              "Reviewer": "philpax",
               "Submitter": "keifufu"
             }
           }
